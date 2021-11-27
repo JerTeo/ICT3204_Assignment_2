@@ -13,9 +13,13 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import GridSearchCV
+import requests
 
 ### Title content ###
-!wget "https://raw.githubusercontent.com/urwithajit9/ClaMP/master/dataset/ClaMP_Raw-5184.csv"
+url = "https://raw.githubusercontent.com/urwithajit9/ClaMP/master/dataset/ClaMP_Raw-5184.csv"
+r = requests.get(url, allow_redirects=True)
+
+open('ClaMP_Raw-5184.csv', 'wb').write(r.content)
 df = pd.read_csv("ClaMP_Raw-5184.csv")
 st.title("""
 Welcome to Team 27's streamlit!
