@@ -15,7 +15,8 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import GridSearchCV
 
 ### Title content ###
-df = pd.read_csv("/content/drive/MyDrive/datasets/malware-raw-dataset.csv")
+!wget "https://raw.githubusercontent.com/urwithajit9/ClaMP/master/dataset/ClaMP_Raw-5184.csv"
+df = pd.read_csv("ClaMP_Raw-5184.csv")
 st.title("""
 Welcome to Team 27's streamlit!
 
