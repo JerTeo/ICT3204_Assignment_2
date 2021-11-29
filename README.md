@@ -1,6 +1,6 @@
 # Malware classification based on PE Header
 
-A machine-learning project done for SIT ICT3204 module. The objective of the project is to learn:
+A machine-learning project done for **SIT ICT3204** module. The objective of the project is to learn:
 1. Understanding the data
 2. Deciding on the model to use
 3. Visualising result
